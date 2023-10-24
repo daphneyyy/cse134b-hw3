@@ -16,18 +16,36 @@
         </nav>
     </header>
 
+    <details>
+        <summary>Contact Information</summary>
+        <p>Email: xuy001@ucsd.edu</p>
+        <p>Email: xuewenyang1@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/xuewen-daphne-yang/">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/daphneyyy">GitHub Profile</a></p>
+    </details>
+    <br>
     <form action="#">
         <fieldset>
-            <legend>Info</legend>
+            <legend><b>Contact Form</b></legend>
             <label for="first_name">First name:</label>
             <input type="text" id="first_name" name="first_name"><br><br>
             <label for="last_name">Last name:</label>
             <input type="text" id="last_name" name="last_name"><br><br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
+            <label for="email">You are a:</label>
+            <select id="occupation" name="occupation">
+                <optgroup label="Academic">
+                    <option value="linkedin">student</option>
+                    <option value="github">teacher/professor</option>
+                </optgroup>
+                <optgroup label="Non-academic">
+                    <option value="email">recruiter</option>
+                </optgroup>
+            </select> of <input type="text" placeholder="affiliation"><br><br>
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
-            <input type="submit" value="Submit">
+            <button type="submit">Submit</button>
         </fieldset>
     </form>
 
