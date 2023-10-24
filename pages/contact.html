@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Contact Me</title>
 </head>
@@ -20,8 +20,8 @@
         <summary>Contact Information</summary>
         <p>Email: xuy001@ucsd.edu</p>
         <p>Email: xuewenyang1@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/xuewen-daphne-yang/">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/daphneyyy">GitHub Profile</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/xuewen-daphne-yang/" target="_blank">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/daphneyyy" target="_blank">GitHub Profile</a></p>
     </details>
     <br>
     <form action="#">
@@ -36,11 +36,14 @@
             <label for="email">You are a:</label>
             <select id="occupation" name="occupation">
                 <optgroup label="Academic">
-                    <option value="linkedin">student</option>
-                    <option value="github">teacher/professor</option>
+                    <option value="student">student</option>
+                    <option value="prof">teacher/professor</option>
                 </optgroup>
                 <optgroup label="Non-academic">
-                    <option value="email">recruiter</option>
+                    <option value="recruiter">recruiter</option>
+                </optgroup>
+                <optgroup label="Other">
+                    <option value="other">friend :)</option>
                 </optgroup>
             </select> of <input type="text" placeholder="affiliation"><br><br>
             <label for="message">Message:</label><br>
@@ -50,7 +53,7 @@
     </form>
 
     <footer>
-        <p>&copy; 2023 Xuewen Yang</p>
+        <span>&copy; 2023 Xuewen Yang</span>
     </footer>
 </body>
 </html>
