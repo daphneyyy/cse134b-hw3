@@ -6,22 +6,67 @@
 <body>
     <header>
         <h1>Experiment Page</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="experiment.html">Experiment</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <div>
-            <p>First code!</p>
+            <label for="fruits">Choose a fruit:</label>
+            <input list="fruitList" id="fruits" name="fruits">
+            <datalist id="fruitList">
+                <option value="Apple">
+                <option value="Banana">
+                <option value="Cherry">
+                <option value="Grape">
+                <option value="Orange">
+            </datalist>
+        </div>
+        <hr>
+        <div>
+            <h3>First code!</h3>
             <pre>
-    <code>
-    >>> print("Hello World!")
-    Hello World!
-    </code>
+                <code>
+                >>> print("Hello World!")
+                Hello World!
+                </code>
             </pre>
         </div>
-
+        <hr>
         <template>
             <p>Hello! This is a template!</p>
+            <hr>
         </template>
+        <audio controls>
+            <source src="#" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <hr>
+        <div class="canvas">
+            <h3>Simple Canvas</h3>
+            <canvas id="myCanvas"></canvas>
+            <script>
+                var canvas = document.getElementById("myCanvas");
+                var context = canvas.getContext("2d");
+                context.fillStyle = "skyblue";
+                context.fillRect(50, 50, 100, 100);
+            </script>
+        </div>
+        <hr>
+        <div>
+            <h3>SVG</h3>
+            <svg>
+                <circle cx="50" cy="50" r="40" fill="purple" />
+            </svg>
+        </div>
+        <hr>
     </main>
 
     <footer>
