@@ -5,11 +5,22 @@ body {
 
 header h1 {
     text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 60px;
     margin-top: 40px;
-    padding: 60px 0px;
+    padding-top: 60px;
+
 }
+
+header h3 {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px;
+    padding-bottom: 60px;
+}
+
 
 /* Style for the navigation bar */
 header nav {
