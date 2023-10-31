@@ -1,3 +1,4 @@
+/* Intro class css */
 .intro {
     background-color: rgb(178, 211, 207);
     padding: 20px;
@@ -7,7 +8,7 @@
 }
 
 .intro img {
-    border-radius: 10px;
+    border-radius: 100px;
     height: 200px;
     width: 200px;
 }
@@ -19,7 +20,8 @@
     margin: 20px;
     text-align: left;
     flex: 1;
-    max-width: 40%;
+    max-width: 800px;
+    min-width: 500px;
 }
 
 .info-content h2 {
@@ -52,18 +54,76 @@ aside {
     font-style: italic;
 }
 
+/* Work class css */
 .work {
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background-color: rgb(247, 250, 251);
 }
 
 .work-content {
-    width: 70%;
+    background-color: rgb(247, 250, 251);
+    padding: 10px 20px;
+    margin: 40px;
+    max-width: 800px;
+    min-width: 500px;
 }
 
 .resume {
-    width: 30%;
-    min-width: 200px;
+    text-align: center;
+    margin: 40px;
 }
+
+.resume iframe {
+    border: 1px;
+    border:1px solid black;
+    height: 500px;
+    width: 400px;
+}
+
+
+/* Skills class css */
+.skills {
+    background-color: rgb(178, 211, 207);
+    text-align: center;
+}
+
+.skills h2 {
+    margin: 0;
+    padding: 20px;
+}
+
+.tables {
+    display: flex;
+    justify-content: center;
+}
+
+.tables table {
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+.tables caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+}
+
+.tables th {
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.tables td {
+    padding: 10px;
+}
+
+.tables tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
