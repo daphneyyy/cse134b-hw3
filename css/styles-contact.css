@@ -1,0 +1,43 @@
+/* additional styles for contact.html */
+main {
+    background-color: rgb(247, 250, 251);
+    margin: 0px 20px;
+    border-radius: 2px;
+    padding: 20px 20px;
+}
+
+details summary{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+details ul {
+    list-style-type: none;
+}
+
+details ul li {
+    padding: 5px 0px;
+}
+
+details ul li a {
+    text-decoration: none;
+}
+
+#contact_form {
+    background-color: rgb(223, 236, 235);
+    margin: 20px;
+    border-radius: 4px;
+    /* border: 1px solid gray; */
+    border: 0px;
+    padding: 20px 40px;
+}
+
+input, select, textarea {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(190, 187, 187);
+}
+
+textarea {
+    margin-top: 10px;
+}

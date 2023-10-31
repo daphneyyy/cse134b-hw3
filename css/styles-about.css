@@ -1,0 +1,69 @@
+.intro {
+    background-color: rgb(178, 211, 207);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro img {
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+.info-content {
+    background-color: rgb(247, 250, 251);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: left;
+    flex: 1;
+    max-width: 40%;
+}
+
+.info-content h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.info-content td {
+    vertical-align: top;
+}
+
+.info-content h3 {
+    margin: 0;
+}
+
+.info-content td p {
+    margin: 0;
+}
+
+.info-content ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+aside {
+    padding: 10px 20px;
+    background-color: rgb(247, 250, 251);
+    border-radius: 10px;
+    width: 200px;
+    font-style: italic;
+}
+
+.work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.work-content {
+    width: 70%;
+}
+
+.resume {
+    width: 30%;
+    min-width: 200px;
+}
