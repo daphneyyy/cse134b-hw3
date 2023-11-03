@@ -15,13 +15,13 @@ details ul {
     list-style-type: none;
 }
 
-details ul li {
+/* details ul li {
     padding: 5px 0px;
-}
+} */
 
-details ul li a {
+/* details ul li a {
     text-decoration: none;
-}
+} */
 
 #contact_form {
     background-color: rgb(223, 236, 235);
