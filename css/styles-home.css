@@ -1,5 +1,7 @@
+@import "styles.css";
+
 main {
-    background-color: rgb(247, 250, 251);
+    background-color: var(--body-color, white);
 }
 
 .videos {
@@ -7,22 +9,52 @@ main {
     justify-content: center;
     align-items: center;
     margin: 20px;
-
-    border: 1px solid black;
+    padding: 20px;
 }
 
 .videos video {
     margin: 0px 20px;
-    width: 100%;
-    min-width: 200px;
-    max-width: 300px;
+    width: 300px;
+    /* min-width: 200px; */
+    /* max-width: 300px; */
     filter: brightness(0.7);
-    
-    border: 2px solid red;
 }
 
 .video-description {
     margin: 0px 20px;
-    font-size: 20px;
-    font-weight: 400px;
+    /* font-size: 20px; */
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* Very Small Screens (Phone) */
+@media screen and (max-width: 480px) {
+    .videos {
+        flex-direction: column;
+    }
+
+    .videos video {
+        width: 200px;
+    }
+}
+
+/* Tablets or Restrictive Laptops */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .videos {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .videos video {
+        width: 150px;
+    }
+
+    .video-description {
+        font-size: 1rem;
+    }
+}
+
+/* Desktops */
+@media screen and (min-width: 1025px) {
+    
 }

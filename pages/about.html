@@ -10,6 +10,12 @@
     <body>
         <header>
             <h1>About Me</h1>
+            <input type="checkbox" id="side-menu">
+            <label class="hamburger" for="side-menu">
+                <span class="hamb-line"></span>
+                <span class="hamb-line"></span>
+                <span class="hamb-line"></span>
+            </label>
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -21,33 +27,13 @@
             </nav>
         </header>
         <main>
-            <div class="intro">
-                <img src="../media/headshot.JPG" alt="Headshot">
-                <!-- <div class="info-content">
-                <h2>Personal Info</h2>
-                <ul>
-                    <li>
-                        <h3>Education</h3>
-                        <p>University of California, San Diego</p>
-                        <p><i>9/2020 - 3/2024</i></p>
-                        <p>Major 1: B.S. in Math-Computer Science</p>
-                        <p>Major 2: B.S. in Data Science</p>
-                    </li>
-                    <li>
-                        <h3>Location</h3>
-                        <p>San Francisco, CA</p>
-                    </li>
-                    <li>
-                        <h3>Interests</h3>
-                        <ol>
-                            <li>Listening to music</li>
-                            <li>Watching K-dramas and Chinese dramas</li>
-                            <li>Playing video games</li>
-                            <li>Singing</li>
-                        </ol>
-                    </li>
-                </ul>
-            </div> -->
+            <section class="intro">
+                <!-- <img src="../media/headshot.JPG" alt="Headshot"> -->
+                <picture>
+                    <source srcset="../media/headshot.webp" type="image/webp">
+                    <source srcset="../media/headshot.jpg" type="image/jpeg">
+                    <img src="../media/headshot.jpg" alt="Headshot of Xuewen Yang" />
+                </picture>
                 <table class="info-content">
                     <tr>
                         <th colspan="2"><h2>Personal Info</h2></th>
@@ -85,7 +71,7 @@
                         culture, set against a backdrop of steep hills and a
                         moderate climate.</p>
                 </aside>
-            </div>
+            </section>
             <section class="work">
                 <div class="work-content">
                     <h2>Work Experience</h2>
@@ -141,7 +127,7 @@
                     <iframe src="../documents/Xuewen_Yang_Resume.pdf"
                         title="Resume"></iframe>
                     <br><br>
-                    <button type="button">Download Resume</button>
+                    <a href="../documents/Xuewen_Yang_Resume.pdf" download="Xuewen_Yang_Resume.pdf" class="download-button">Download Resume</a>
                 </div>
             </section>
             <section class="skills">

@@ -1,21 +1,27 @@
+@import "styles.css";
+
 /* Intro class css */
 .intro {
-    background-color: rgb(178, 211, 207);
-    padding: 20px;
+    background-color: var(--main-color, white);
+    /* padding: 20px; */
+    /* padding: 2rem; */
+    padding: 1.25rem 1.25rem 3.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .intro img {
-    border-radius: 100px;
+    /* border-radius: 100px; */
+    border-radius: 50%;
     height: 200px;
     width: 200px;
 }
 
 .info-content {
-    background-color: rgb(247, 250, 251);
-    padding: 10px 20px;
+    /* background-color: var(--body-color, white); */
+    /* padding: 10px 20px; */
+    padding: 1rem 2rem;
     border-radius: 20px;
     margin: 20px;
     text-align: left;
@@ -47,8 +53,9 @@
 }
 
 aside {
-    padding: 10px 20px;
-    background-color: rgb(247, 250, 251);
+    /* padding: 10px 20px; */
+    padding: 1rem 2rem;
+    background-color: var(--body-color, white);
     border-radius: 10px;
     width: 200px;
     font-style: italic;
@@ -58,17 +65,22 @@ aside {
 .work {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 60px;
-    background-color: rgb(247, 250, 251);
+    /* padding-top: 20px; */
+    /* padding-bottom: 60px; */
+    /* padding-top: 1.25rem; */
+    /* padding-bottom: 3.75rem; */
+    padding: 1.25rem 1.25rem 3.75rem;
+    background-color: var(--body-color, white);
 }
 
 .work-content {
-    background-color: rgb(247, 250, 251);
-    padding: 10px 20px;
+    background-color: var(--body-color, white);
+    /* padding: 10px 20px; */
+    padding: 1rem 2rem;
     margin: 40px;
     max-width: 800px;
     min-width: 500px;
+    transition: padding 0.3s;
 }
 
 .resume {
@@ -77,22 +89,37 @@ aside {
 }
 
 .resume iframe {
-    border: 1px;
     border:1px solid black;
     height: 500px;
     width: 400px;
 }
 
+a.download-button {
+    background-color: var(--button-color, var(--fallback-button-color));
+    color: white;
+    border-radius: 10px;
+    padding: 0.3rem 1.25rem;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+a.download-button:hover {
+    background-color: var(--button-color-hover, black);
+}
 
 /* Skills class css */
 .skills {
-    background-color: rgb(178, 211, 207);
+    background-color: var(--main-color, white);
+    padding: 1.25rem 1.25rem 3.75rem;
     text-align: center;
 }
 
 .skills h2 {
     margin: 0;
-    padding: 20px;
+    padding: 1.5rem;
 }
 
 .tables {
@@ -102,7 +129,8 @@ aside {
 
 .tables table {
     background-color: white;
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 1rem;
     margin: 20px;
 }
 
@@ -110,20 +138,37 @@ aside {
     font-size: 1.2em;
     font-weight: bold;
     background-color: white;
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 1rem;
 }
 
 .tables th {
     color: #333;
     font-weight: bold;
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 1rem;
 }
 
 .tables td {
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 1rem;
 }
 
 .tables tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+/* Very Small Screens (Phone) */
+@media screen and (max-width: 480px) {
+
+}
+
+/* Tablets or Restrictive Laptops */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+   
+}
+
+/* Desktops */
+@media screen and (min-width: 1025px) {
+    
+}

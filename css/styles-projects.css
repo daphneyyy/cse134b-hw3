@@ -1,5 +1,7 @@
+@import "styles.css";
+
 main {
-    background-color: rgb(247, 250, 251);
+    background-color: var(--body-color, white);
 }
 
 .project {
@@ -18,4 +20,21 @@ main {
 
 figure {
     margin: 10px 40px;
+}
+
+/* Very Small Screens (Phone) */
+@media screen and (max-width: 480px) {
+    .project {
+        flex-direction: column;
+    }
+}
+
+/* Tablets or Restrictive Laptops */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+   
+}
+
+/* Desktops */
+@media screen and (min-width: 1025px) {
+    
 }
