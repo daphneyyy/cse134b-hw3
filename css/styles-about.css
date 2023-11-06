@@ -89,7 +89,7 @@ aside {
 }
 
 .resume iframe {
-    border:1px solid black;
+    border: 1px solid black;
     height: 500px;
     width: 400px;
 }
@@ -147,6 +147,7 @@ a.download-button:hover {
     font-weight: bold;
     /* padding: 10px; */
     padding: 1rem;
+    background-color: rgb(106, 201, 230);
 }
 
 .tables td {
@@ -160,15 +161,29 @@ a.download-button:hover {
 
 /* Very Small Screens (Phone) */
 @media screen and (max-width: 480px) {
+    .intro {
+        flex-direction: column;
+    }
+    .work {
+        flex-direction: column;
+    }
 
+    .resume iframe {
+        display: none;
+    }
+
+    .tables {
+        flex-direction: column;
+    }
 }
 
 /* Tablets or Restrictive Laptops */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-   
+    .work {
+        flex-direction: column;
+    }
 }
 
 /* Desktops */
 @media screen and (min-width: 1025px) {
-    
 }
