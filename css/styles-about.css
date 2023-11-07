@@ -64,7 +64,8 @@ aside {
 /* Work class css */
 .work {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: row;
     /* padding-top: 20px; */
     /* padding-bottom: 60px; */
     /* padding-top: 1.25rem; */
@@ -75,14 +76,15 @@ aside {
 
 .work-content {
     background-color: var(--body-color, white);
-    /* padding: 10px 20px; */
     padding: 1rem 2rem;
     margin: 40px;
-    max-width: 800px;
-    min-width: 500px;
     transition: padding 0.3s;
+    word-wrap: break-word;
 }
-
+.work-content ul {
+    display: flex;
+    flex-direction: column;
+}
 .resume {
     text-align: center;
     margin: 40px;
@@ -161,12 +163,26 @@ a.download-button:hover {
 
 /* Very Small Screens (Phone) */
 @media screen and (max-width: 480px) {
+    h2 {
+        text-align: center;
+    }
     .intro {
         flex-direction: column;
     }
     .work {
         flex-direction: column;
+        padding: 20px 0px 0px;
     }
+    .work-content {
+        padding: 0px 10px;
+        margin: 0;
+    }
+    /* .work-content ul {
+        flex-wrap: wrap;
+    } */
+    /* .work-content li p {
+        flex-wrap: wrap;
+    } */
 
     .resume iframe {
         display: none;
@@ -179,9 +195,9 @@ a.download-button:hover {
 
 /* Tablets or Restrictive Laptops */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-    .work {
+    /* .work {
         flex-direction: column;
-    }
+    } */
 }
 
 /* Desktops */
