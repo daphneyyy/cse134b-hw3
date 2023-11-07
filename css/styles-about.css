@@ -61,6 +61,10 @@ aside {
     font-style: italic;
 }
 
+#san_francisco {
+    text-underline: #101010;
+}
+
 /* Work class css */
 .work {
     display: flex;
@@ -169,6 +173,7 @@ a.download-button:hover {
     .intro {
         flex-direction: column;
     }
+
     .work {
         flex-direction: column;
         padding: 20px 0px 0px;
@@ -177,17 +182,9 @@ a.download-button:hover {
         padding: 0px 10px;
         margin: 0;
     }
-    /* .work-content ul {
-        flex-wrap: wrap;
-    } */
-    /* .work-content li p {
-        flex-wrap: wrap;
-    } */
-
     .resume iframe {
         display: none;
     }
-
     .tables {
         flex-direction: column;
     }

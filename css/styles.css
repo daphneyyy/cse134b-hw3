@@ -92,7 +92,7 @@ header nav ul li a {
 
 /* Style for the navigation links on hover */
 header nav ul li a:hover {
-    background-color: var(--main-color, white);
+    background-color: var(--main-color, grey);
     transition: background-color 0.3s ease;
 }
 
