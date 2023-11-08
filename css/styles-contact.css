@@ -5,7 +5,6 @@
     --border-color: rgb(190, 187, 187);
 }
 
-/* additional styles for contact.html */
 main {
     background-color: var(--body-color, white);
     margin: 0px 20px;
