@@ -1,5 +1,6 @@
 :root {
     --main-color: rgb(178, 211, 207);
+    /* --body-color: rgb(227, 191, 166); */
     --body-color: rgb(247, 250, 251);
     --button-color: rgb(90, 186, 113);
     --fallback-button-color: rgb(171, 250, 189);
@@ -8,52 +9,42 @@
     --fallback-font: Arial, sans-serif;
 }
 
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 body {
-    background-color: var(--main-color, white);
-    margin: 0;
-    font-size: 16px;
+    background-color: var(--body-color, white);
+    font-family: var(--font-family, var(--fallback-font));
 }
 
-/* header h1 {
+header, footer {
+    background-color: var(--main-color, white);
     text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 60px;
-    margin-top: 40px;
-    padding-top: 60px;
+}
 
-} */
+main {
+    padding: 1.25rem 0;
+    width: 90%;
+    margin: 0 auto;
+}
 
 header h1 {
-    text-align: center;
-    font-family: var(--font-family, var(--fallback-font));
-    font-size: 3.75rem; 
-    margin-top: 2.5rem;
-    padding-top: 3.75rem;
+    font-size: 4rem; 
+    padding-top: 8rem;
+    width: 90%;
+    margin: 0 auto;
 }
 
-/* header h3 {
-    text-align: center;
-    font-family: var(--font-family, var(--fallback-font));
-    font-weight: 400;
-    font-size: 20px;
-    margin: 0px;
-    padding-bottom: 60px;
-} */
 header h3 {
-    text-align: center;
-    font-family: var(--font-family, var(--fallback-font));
     font-weight: 400;
     font-size: 1.25rem;
-    margin: 0;
     padding-bottom: 3.75rem;
+    width: 90%;
+    margin: 0 auto;
 }
-
 
 /* Style for the navigation bar */
 header nav {
@@ -61,7 +52,6 @@ header nav {
     top: 0;
     width: 100%;
     background-color: white;
-    /* padding: 10px 0px; */
     padding: 1rem 0;
     overflow: hidden;
 }
@@ -69,14 +59,12 @@ header nav {
 /* Style for the navigation menu (ul) */
 header nav ul {
     list-style-type: none;
-    margin: 0;
     float: right;
 }
 
 /* Style for the navigation menu items (li) */
 header nav ul li {
     display: inline;
-    /* margin-right: 20px;  */
 }
 
 /* Style for the navigation links (a) */
@@ -85,8 +73,7 @@ header nav ul li a {
     color: black;
     padding: 10px 10px;
     margin-left: 5px;
-    font-size: 17px;
-    font-family: var(--font-family, var(--fallback-font));
+    font-size: 1rem;
     transition: color 0.3s ease;
 } 
 
@@ -105,7 +92,7 @@ header nav ul li a:hover {
     position: fixed;
     top: 0;
     right: 0;
-    margin: 20px;
+    margin: 0.25rem 1rem;
     cursor: pointer;
     z-index: 1;
     display: none;
@@ -118,31 +105,13 @@ header nav ul li a:hover {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: black;
 }
 
-
-main {
-    background-color: white;
-    /* padding: 20px 0px; */
-    padding: 1.25rem 0;
-}
-
-/* footer {
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 15px;
-} */
 footer {
-    width: 100%;
-    padding-top: 1.875rem;
-    padding-bottom: 1.25rem;
-    text-align: center;
-    font-family: var(--font-family, var(--fallback-font));
-    font-size: 0.9375rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.7rem;
 }
 
 #footer-logo {
@@ -154,10 +123,8 @@ footer {
 }
 
 #footer-logo img {
-    width: auto;
-    /* height: 25px; */
-    /* padding: 4px; */
     height: 1.5rem;
+    width: auto;
     padding: 0.25rem;
 }
 
@@ -165,7 +132,6 @@ button {
     background-color: var(--button-color, var(--fallback-button-color));
     color: white;
     border-radius: 10px;
-    /* padding: 5px 20px; */
     padding: 0.3rem 1.25rem;
     border: 0;
     display: inline-block;
@@ -181,7 +147,7 @@ button:hover {
 @media screen and (max-width: 480px) {
     header h1 {
         font-size: 2rem;
-        margin-top: 1.5rem;
+        margin-top: 2rem;
         padding-top: 2rem;
     }
     header h3 {
@@ -225,7 +191,7 @@ button:hover {
 /* Tablets or Restrictive Laptops */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     /* Modify styles for tablets/laptops */
-    header h1 {
+    /* header h1 {
         font-size: 3rem;
         margin-top: 2.5rem;
         padding-top: 3.75rem;
@@ -233,13 +199,13 @@ button:hover {
     header h3 {
         font-size: 1.25rem;
         padding-bottom: 3.75rem;
-    }
+    } */
 }
 
 /* Desktops */
 @media screen and (min-width: 1025px) {
     /* Modify styles for desktops */
-    header h1 {
+    /* header h1 {
         font-size: 3.75rem;
         margin-top: 3.75rem;
         padding-top: 3.75rem;
@@ -247,6 +213,6 @@ button:hover {
     header h3 {
         font-size: 1.25rem;
         padding-bottom: 3.75rem;
-    }
+    } */
     /* Additional adjustments for other elements as needed */
 }
