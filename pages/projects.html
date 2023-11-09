@@ -19,97 +19,64 @@
             </label>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-<!--                    <li><a href="experiment.html">Experiment</a></li>-->
+                    <li><a href="../index.html" class="nav-home">Home</a></li>
+                    <li><a href="about.html" class="nav-about">About</a></li>
+                    <li><a href="projects.html" class="nav-project">Projects</a></li>
+                    <li><a href="contact.html" class="nav-contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section class="project">
                 <div class="project-content">
-                    <h2>Project 1</h2>
-                    <div class="proj-description">
-                        <p>Description of Project 1</p>
-                        <p>Description of Project 1</p>
-                        <p>Description of Project 1</p>
-                        <p>Description of Project 1</p>
-                    </div>
-                    <a href="#" target="_blank">View Project</a>
+                    <h2>Status and Prospects of Data Science Careers</h2>
+                    <ul class="proj-description">
+                        <li>Data visualization project focusing on data science job trends and salary growth.</li>
+                        <li>Target audience: individuals interested in data science careers, including data science students.</li>
+                        <li>Utilizes standard visualization techniques, follows Drill-Down narrative structure with overview and specific aspects.</li>
+                        <li>Visualizations cover remote work trends, salary growth with experience, geographic factors, and job categories.</li>
+                    </ul>
+                    <a href="https://github.com/daphneyyy/dsc106-final-project">View Project</a>
                 </div>
                 <figure>
-                    <!-- <img src="#" alt="Project 1 Image"> -->
-                    <picture>
-                        <!-- Define multiple image sources for different screen sizes -->
-                        <source media="(min-width: 1024px)"
-                            srcset="../images/project1-large.jpg">
-                        <source media="(min-width: 768px)"
-                            srcset="../images/project1-medium.jpg">
-                        <source media="(max-width: 767px)"
-                            srcset="../images/project1-small.jpg">
-                        <!-- Fallback for browsers that don't support <picture> -->
-                        <img src="../images/project1-large.jpg"
-                            alt="Project 1 Image">
-                    </picture>
-                    <figcaption>Project 1 Image Caption</figcaption>
+                    <img src="../media/proj1.png" alt="Project 1 Image: Job Remoteness by Year">
+                    <!-- <img src="../media/proj1_b.png" alt="Project 1 Image"> -->
+                    <!-- <img src="../media/proj1_c.png" alt="Project 1 Image"> -->
+                    <figcaption>Job Remoteness by Year</figcaption>
                 </figure>
             </section>
             <section class="project">
                 <div class="project-content">
-                    <h2>Project 2</h2>
-                    <div class="proj-description">
-                        <p>Description of Project 2</p>
-                        <p>Description of Project 2</p>
-                        <p>Description of Project 2</p>
-                        <p>Description of Project 2</p>
-                    </div>
-                    <a href="#" target="_blank">View Project</a>
+                    <h2>Predictive Analysis on Clothing Fit</h2>
+                    <ul class="proj-description">
+                        <li>Developed a predictive model for clothing fit based on user measurements using Python.</li>
+                        <li>Conducted exploratory analysis to uncover insights on size distribution.</li>
+                        <li>Implemented baseline and enhanced models using scikit-learn and pandas, achieving high accuracy.</li>
+                        <li>Balanced the dataset to address class imbalance and improve model performance.</li>
+                    </ul>
+                    <a href="https://github.com/wehu5/CSE158_Assignment2/blob/main/CSE158_A2_Written_Report.pdf">View Project</a>
                 </div>
                 <figure>
-                    <!-- <img src="#" alt="Project 2 Image"> -->
-                    <picture>
-                        <!-- Define multiple image sources for different screen sizes -->
-                        <source media="(min-width: 1024px)"
-                            srcset="../images/project2-large.jpg">
-                        <source media="(min-width: 768px)"
-                            srcset="../images/project2-medium.jpg">
-                        <source media="(max-width: 767px)"
-                            srcset="../images/project2-small.jpg">
-                        <!-- Fallback for browsers that don't support <picture> -->
-                        <img src="../images/project2-large.jpg"
-                            alt="Project 2 Image">
-                    </picture>
-                    <figcaption>Project 2 Image Caption</figcaption>
+                    <img src="../media/proj2.png" alt="Project 2 Image: confusion matrix">
+                    <figcaption>Confusion Matrix of Final Model of Size Fit Prediction</figcaption>
                 </figure>
             </section>
             <section class="project">
                 <div class="project-content">
-                    <h2>Project 3</h2>
-                    <div class="proj-description">
-                        <p>Description of Project 3</p>
-                        <p>Description of Project 3</p>
-                        <p>Description of Project 3</p>
-                        <p>Description of Project 3</p>
-                    </div>
-                    <a href="#" target="_blank">View Project</a>
+                    <h2>Rank Prediction of New York City Police Officers based on Civilian Complaints</h2>
+                    <ul class="proj-description">
+                        <li>Developed a predictive model using DecisionTreeClassifier to rank
+                            New York City police officers based on civilian complaints.</li>
+                        <li>Improved accuracy significantly from 0.13 to 0.34 through feature
+                            engineering and model optimization.</li>
+                        <li>Conducted fairness analysis and performed a permutation test to
+                            assess potential biases in the model's performance.</li>
+                    </ul>
+                    <a href="https://github.com/daphneyyy/DSC80_Proj5/blob/main/proj5.ipynb">View Project</a>
                 </div>
                 <figure>
-                    <!-- <img src="#" alt="Project 3 Image"> -->
-                    <picture>
-                        <!-- Define multiple image sources for different screen sizes -->
-                        <source media="(min-width: 1024px)"
-                            srcset="../images/project3-large.jpg">
-                        <source media="(min-width: 768px)"
-                            srcset="../images/project3-medium.jpg">
-                        <source media="(max-width: 767px)"
-                            srcset="../images/project3-small.jpg">
-                        <!-- Fallback for browsers that don't support <picture> -->
-                        <img src="../images/project3-large.jpg"
-                            alt="Project 3 Image">
-                    </picture>
-                    <figcaption>Project 3 Image Caption</figcaption>
+                    <img src="../media/proj3.png" alt="Project 3 Image: confusion matrix">
+                    <figcaption>Confusion Matrix of Final Model of Rank Prediction</figcaption>
                 </figure>
             </section>
         </main>

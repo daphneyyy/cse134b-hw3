@@ -1,32 +1,97 @@
 @import "styles.css";
 
-main {
-    background-color: var(--body-color, white);
+.nav-project {
+    background-color: var(--button-color-hover, grey);
+    color: white;
+    pointer-events: none;
 }
 
 .project {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .project-content {
     display: flex;
     flex-direction: column;
-    margin: 10px 40px;
+    width: 50%;
+    margin: 1rem;
+    > a {
+        text-align: center;
+        color: var(--button-color-hover, purple);
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0.3rem 1.25rem;
+        border: 0;
+        display: inline-block;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+    }
+    > a:hover {
+        color: var(--button-color-hover, red);
+    }
+    > h2 {
+        font-size: 25px;
+    }
+    > h2::after {
+        content: "";
+        display: block;
+        width: 30%;
+        height: 2px;
+        background-color: gray;
+        margin: 1rem 0;
+    }
+    > ul {
+        > li {
+            font-size: 20px;
+        }
+    }
 }
 
 figure {
-    margin: 10px 40px;
+    width: 50%;
+    margin: 1rem;
+    text-align: center;
+    > img {
+        width: auto;
+        height: 300px;
+    }
 }
 
 /* Very Small Screens (Phone) */
 @media screen and (max-width: 480px) {
     .project {
         flex-direction: column;
+        padding-bottom: 20px;
     }
+
+    .project-content {
+        width: 100%;
+        margin: 0;
+        > h2 {
+            font-size: 20px;
+        }
+        > ul {
+            > li {
+                font-size: 15px;
+            }
+        }
+        > a {
+            font-size: 15px;
+        }
+    }
+
+    figure {
+        width: 100%;
+        > img {
+            width: auto;
+            height: 200px;
+        }
+    }    
 }
 
 /* Tablets or Restrictive Laptops */

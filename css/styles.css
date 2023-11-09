@@ -154,6 +154,7 @@ button:hover {
         display: none;
     }
     header nav ul {
+        text-align: left;
         float: left;
         max-height: 500px;
     }

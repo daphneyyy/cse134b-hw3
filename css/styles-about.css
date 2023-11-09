@@ -5,6 +5,12 @@
     --bar-color: rgb(27, 156, 135);
 }
 
+.nav-about {
+    background-color: var(--button-color-hover, grey);
+    color: white;
+    pointer-events: none;
+}
+
 .work {
     display: flex;
     flex-direction: column;
