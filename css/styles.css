@@ -8,6 +8,18 @@
     --fallback-font: Arial, sans-serif;
 }
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-40px);
+    }
+    60% {
+      transform: translateY(-20px);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,10 +31,15 @@ body {
     font-family: var(--font-family, var(--fallback-font));
 }
 
-header,
-footer {
-    background-color: var(--main-color, white);
+header {
+    height: 100dvh;
+    background: url("../media/background-min.jpg") no-repeat top;
+    background-size: cover;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
@@ -33,18 +50,18 @@ main {
 
 header h1 {
     font-size: 4rem;
-    padding-top: 8rem;
     width: 90%;
     margin: 0 auto;
-    padding-bottom: 3.75rem;
+    color: white;
+    animation: bounce 2s ease-in-out infinite
 }
 
 header h3 {
     font-weight: 400;
     font-size: 1.25rem;
-    padding-bottom: 3.75rem;
     width: 90%;
     margin: 0 auto;
+    color: white;
 }
 
 header nav {
@@ -75,6 +92,8 @@ header nav {
     }
 }
 
+header 
+
 #side-menu {
     display: none;
 }
@@ -88,6 +107,7 @@ header nav {
     cursor: pointer;
     z-index: 1;
     display: none;
+    
 }
 
 .hamb-line {
@@ -97,13 +117,15 @@ header nav {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: black;
+    background-color: var(--button-color-hover, black);
 }
 
 footer {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     font-size: 0.7rem;
+    background-color: var(--main-color, white);
+    text-align: center;
 }
 
 #footer-logo {
@@ -135,7 +157,6 @@ button:hover {
     background-color: var(--button-color-hover, black);
 }
 
-/* Adjustments for the hamburger icon and menu on small screens */
 @media screen and (max-width: 480px) {
     header h1 {
         font-size: 2rem;
@@ -178,5 +199,12 @@ button:hover {
         display: block;
         transition: all 0.3s ease;
         z-index: 1;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        background: url("../media/background-large.jpeg") no-repeat center;
+        background-size: cover;
     }
 }
