@@ -58,6 +58,9 @@ main {
 
 /* Very Small Screens (Phone) */
 @media screen and (max-width: 480px) {
+    header h1 {
+        padding-top: 2rem;
+    }
     main {
         display: grid;
         grid-template-columns: 1fr;
@@ -82,13 +85,4 @@ main {
     .interests {
         grid-area: 4 / 1 / 5 / 2;
     }
-}
-
-/* Tablets or Restrictive Laptops */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-
-}
-
-/* Desktops */
-@media screen and (min-width: 1025px) {
 }

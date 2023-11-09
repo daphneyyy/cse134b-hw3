@@ -140,7 +140,7 @@ button:hover {
     header h1 {
         font-size: 2rem;
         margin-top: 2rem;
-        padding-top: 2rem;
+        padding-top: 4rem;
     }
     header h3 {
         font-size: 1rem;
@@ -179,33 +179,4 @@ button:hover {
         transition: all 0.3s ease;
         z-index: 1;
     }
-}
-
-/* Tablets or Restrictive Laptops */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-    /* Modify styles for tablets/laptops */
-    /* header h1 {
-        font-size: 3rem;
-        margin-top: 2.5rem;
-        padding-top: 3.75rem;
-    }
-    header h3 {
-        font-size: 1.25rem;
-        padding-bottom: 3.75rem;
-    } */
-}
-
-/* Desktops */
-@media screen and (min-width: 1025px) {
-    /* Modify styles for desktops */
-    /* header h1 {
-        font-size: 3.75rem;
-        margin-top: 3.75rem;
-        padding-top: 3.75rem;
-    }
-    header h3 {
-        font-size: 1.25rem;
-        padding-bottom: 3.75rem;
-    } */
-    /* Additional adjustments for other elements as needed */
 }
