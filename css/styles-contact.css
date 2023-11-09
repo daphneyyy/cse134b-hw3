@@ -11,38 +11,26 @@
     pointer-events: none;
 }
 
-main {
-    background-color: var(--body-color, white);
-    margin: 0px 20px;
-    border-radius: 2px;
-    padding: 20px;
+.contact_info {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.2rem 0;
+    > summary{
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    > ul {
+        list-style-type: none;
+    }
 }
 
-details summary{
-    /* font-size: 20px; */
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-details ul {
-    list-style-type: none;
-}
-
-/* details ul li {
-    padding: 5px 0px;
-} */
-
-/* details ul li a {
-    text-decoration: none;
-} */
-
-#contact_form {
+.contact_form {
     background-color: var(--form-color, white);
-    margin: 20px;
     border-radius: 4px;
-    /* border: 1px solid gray; */
     border: 0px;
     padding: 20px 40px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 input, select, textarea {

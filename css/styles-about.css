@@ -55,7 +55,7 @@
 }
 
 .skills {
-    padding: 40px;
+    padding: 40px 0;
     width: 90%;
     margin: 0 auto;
     > h2 {
@@ -145,6 +145,7 @@
 
 /* Tablets or Restrictive Laptops */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
+
 }
 
 /* Desktops */
